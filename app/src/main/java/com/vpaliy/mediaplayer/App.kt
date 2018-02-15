@@ -8,6 +8,7 @@ import com.vpaliy.mediaplayer.di.component.PlaybackComponent
 import com.vpaliy.mediaplayer.di.module.*
 
 class App : Application() {
+
   val component: ApplicationComponent by lazy(LazyThreadSafetyMode.NONE){
     DaggerApplicationComponent.builder()
         .applicationModule(ApplicationModule(this))
